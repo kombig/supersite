@@ -1,0 +1,125 @@
+.content {
+    margin-top: 14px;
+    display: grid;
+    justify-items: center;
+}
+
+h1.title {
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    justify-self: flex-start;
+}
+
+.priceList {
+    margin-top: 28px;
+    overflow: hidden;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    padding-bottom: 13px;
+    position: relative;
+}
+
+.priceList p {
+    color: #FFFFFF;
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.priceList div div {
+    background: #2C2C38;
+    opacity: 0.8;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    transition: opacity ease-in 150ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.priceList > div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.priceList img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Animation*/
+
+.priceList:hover div div {
+    opacity: 1;
+}
+
+/*Media*/
+
+@media (min-width: 320px) {
+}
+
+
+@media (min-width: 768px) {
+    .content {
+        margin-top: 30px;
+    }
+
+    h1.title {
+        font-size: 36px;
+        line-height: 25px;
+    }
+
+    .priceList {
+        margin-top: 60px;
+        padding-bottom: 17px;
+    }
+
+    .priceList p {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .priceList div div {
+        border-radius: 20px;
+        width: 270px;
+        height: 80px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .content {
+        margin-top: 56px;
+    }
+
+    h1.title {
+        font-size: 48px;
+        line-height: 35px;
+    }
+
+    .priceList p {
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    .priceList div div {
+        border-radius: 30px;
+        width: 400px;
+        height: 120px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .content {
+        margin-top: 80px;
+    }
+}

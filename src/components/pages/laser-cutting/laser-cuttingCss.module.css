@@ -1,0 +1,113 @@
+.bothBCG {
+    background: #E1E8EC url("../../../assets/images/laser-cutting/bg.svg") no-repeat center center;
+    color: #2C2C38;
+    background-size: contain;
+    background-position-y: -20px;
+}
+
+@media (min-width: 334px) {
+    .bothBCG {
+        background-size: contain;
+        background-position-y: -18%;
+    }
+}
+
+@media (min-width: 358px) {
+    .bothBCG {
+        background-size: contain;
+        background-position-y: -28%;
+    }
+}
+
+@media (min-width: 372px) {
+    .bothBCG {
+        background-size: contain;
+        background-position-y: -38%;
+    }
+}
+
+@media (min-width: 380px) {
+    .bothBCG {
+        background-size: contain;
+        background-position-y: -48%;
+    }
+}
+
+@media (min-width: 395px) {
+    .bothBCG {
+        background-size: contain;
+        background-position-y: -68%;
+    }
+}
+
+@media (min-width: 420px) {
+    .bothBCG {
+        background-size: contain;
+        background-position-y: -108%;
+    }
+}
+
+@media (min-width: 446px) {
+    .bothBCG {
+        background-size: contain;
+        background-position-y: -118%;
+    }
+}
+
+@media (min-width: 504px) {
+    .bothBCG {
+        background-size: contain;
+        background-position-y: -350%;
+    }
+}
+
+@media (min-width: 618px) {
+    .bothBCG {
+        background-size: contain;
+        background-position-y: -890%;
+    }
+}
+
+@media (min-width: 676px) {
+    .bothBCG {
+        background-size: cover;
+        background-position-y: -35vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .bothBCG {
+        background: #E1E8EC url("../../../assets/images/laser-cutting/bg768.svg") no-repeat center center;
+        color: #2C2C38;
+        background-size: contain;
+        background-position-y: -340px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .bothBCG {
+        background: #E1E8EC url("../../../assets/images/laser-cutting/bg1280.svg") no-repeat center center;
+        color: #2C2C38;
+        background-size: contain;
+        background-position-y: -340px;
+    }
+}
+
+@media (min-width: 1428px) {
+    .bothBCG {
+        background: #E1E8EC url("../../../assets/images/laser-cutting/bg1280.svg") no-repeat center center;
+        color: #2C2C38;
+        background-size: contain;
+        background-position-y: -520px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .bothBCG {
+        background: #E1E8EC url("../../../assets/images/laser-cutting/bg1600.svg") no-repeat center center;
+        color: #2C2C38;
+        background-size: cover;
+        background-position-y: -520px;
+        background-position-x: -280px;
+    }
+}

@@ -1,0 +1,59 @@
+.content {
+    margin-top: 25px;
+}
+
+h1.titleExampleWorks {
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.swiper {
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+/*Media*/
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin-top: 30px;
+    }
+
+    h1.titleExampleWorks {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .swiper {
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .content {
+        margin-top: 48px;
+    }
+
+    h1.titleExampleWorks {
+        font-size: 48px;
+        line-height: 59px;
+    }
+
+    .swiper {
+        margin-top: 26px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .content {
+        margin-top: 78px;
+    }
+}
+
+@media (min-width: 1920px) {
+}

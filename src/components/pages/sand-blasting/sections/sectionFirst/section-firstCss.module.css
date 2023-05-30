@@ -1,0 +1,218 @@
+.content {
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas:
+            "txt"
+            "img";
+}
+
+h1.titleSandBlasting {
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+p.descriptionSandBlasting {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 4px;
+    font-family: Montserrat-Light, sans-serif;
+}
+
+.listOfSandBlasting {
+    list-style-type: none;
+    margin-top: 6px;
+    margin-left: 3px;
+}
+
+.listOfSandBlasting li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.listOfSandBlasting li p {
+    font-family: Montserrat-Light, sans-serif;
+    display: initial;
+}
+
+.listOfSandBlasting li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.listOfSandBlasting li:before {
+    content: url("../../../../../assets/images/main/header/checkMark.svg");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+    margin-top: 4px;
+    transform: scale(1.2);
+}
+
+.text {
+    grid-area: txt;
+}
+
+.img {
+    grid-area: img;
+    line-height: 0;
+    margin-top: 16px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.img span {
+    border-radius: 30px;
+}
+
+.img img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.img img {
+    transition: transform ease-in 150ms;
+}
+
+/*Animation*/
+.img img:hover {
+    transform: scale(1.03);
+}
+
+/*Media*/
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 420px) {
+    .img {
+        text-align: center;
+    }
+
+    .img img {
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin-top: 30px;
+    }
+
+    h1.titleSandBlasting {
+        font-size: 36px;
+        line-height: 25px;
+    }
+
+    .listOfSandBlasting li:before {
+        margin-top: 0;
+    }
+
+    p.descriptionSandBlasting {
+        font-size: 23px;
+        line-height: 28px;
+        margin-top: 10px;
+    }
+
+    .listOfSandBlasting {
+        margin-top: 10px;
+        margin-left: 16px;
+    }
+
+    .listOfSandBlasting li {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .listOfSandBlasting li:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .listOfSandBlasting li:before {
+        transform: scale(1.4);
+    }
+}
+
+@media (min-width: 1280px) {
+    .content {
+        margin-top: 40px;
+        grid-template-areas:
+            "txt img";
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    h1.titleSandBlasting {
+        font-size: 48px;
+        line-height: 35px;
+    }
+
+    p.descriptionSandBlasting {
+        font-size: 30px;
+        line-height: 37px;
+        margin-top: 22px;
+    }
+
+    .listOfSandBlasting {
+        margin-top: 16px;
+        margin-left: 24px;
+    }
+
+    .listOfSandBlasting li {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .listOfSandBlasting li:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .listOfSandBlasting li:before {
+        margin-top: 2px;
+        transform: scale(1.6);
+        margin-right: 24px;
+    }
+
+    .img {
+        text-align: initial;
+        align-self: center;
+        margin-top: 0;
+        border-radius: 50px;
+    }
+
+    .img span {
+        border-radius: 50px;
+        float: right;
+    }
+
+    .img img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .text {
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .content {
+        margin-top: 60px;
+    }
+
+    .listOfSandBlasting {
+        margin-top: 26px;
+        margin-left: 46px;
+    }
+
+    .listOfSandBlasting li:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1920px) {
+}

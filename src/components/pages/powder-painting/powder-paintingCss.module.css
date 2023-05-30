@@ -1,0 +1,129 @@
+.bothBCGWithOut {
+    background-color: #E1E8EC;
+}
+
+.bothBCG {
+    background: #E1E8EC url("../../../assets/images/powder-painting/bg320more.svg") no-repeat center center;
+    background-size: cover;
+    background-position-y: -80px;
+}
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 380px) {
+    .bothBCG {
+        background-position-y: -50px;
+    }
+}
+
+@media (min-width: 500px) {
+    .bothBCG {
+        background-position-y: 90%;
+    }
+}
+
+@media (min-width: 600px) {
+    .bothBCG {
+        background-position-y: 80%;
+    }
+}
+
+@media (min-width: 660px) {
+    .bothBCG {
+        background-position-y: 72%;
+    }
+}
+
+@media (min-width: 768px) {
+    .bothBCG {
+        background: #E1E8EC url("../../../assets/images/powder-painting/bg768more.svg") no-repeat center center;
+        background-size: cover;
+        background-position-y: -200px;
+    }
+}
+
+@media (min-width: 820px) {
+    .bothBCG {
+        background-position-y: -250px;
+    }
+}
+
+@media (min-width: 870px) {
+    .bothBCG {
+        background-position-y: -300px;
+    }
+}
+
+@media (min-width: 920px) {
+    .bothBCG {
+        background-position-y: -350px;
+    }
+}
+
+@media (min-width: 970px) {
+    .bothBCG {
+        background-position-y: -400px;
+    }
+}
+
+@media (min-width: 1020px) {
+    .bothBCG {
+        background-position-y: -450px;
+    }
+}
+
+@media (min-width: 1070px) {
+    .bothBCG {
+        background-position-y: -500px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .bothBCG {
+        background-position-y: -550px;
+    }
+}
+
+@media (min-width: 1170px) {
+    .bothBCG {
+        background-position-y: -600px;
+    }
+}
+
+@media (min-width: 1220px) {
+    .bothBCG {
+        background-position-y: -650px;
+    }
+}
+
+@media (min-width: 1270px) {
+    .bothBCG {
+        background-position-y: -700px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .bothBCG {
+        background: #E1E8EC url("../../../assets/images/powder-painting/bg1280more.svg") no-repeat center center;
+        background-size: cover;
+        background-position-y: 0;
+    }
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1920px) {
+    .bothBCG {
+        background-position-y: -80px;
+    }
+}
+
+@media (min-width: 2200px) {
+    .bothBCG {
+        background: #E1E8EC url("../../../assets/images/powder-painting/bg2200more.svg") no-repeat center center;
+        background-size: cover;
+        background-position-y: 0;
+    }
+}

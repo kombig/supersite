@@ -1,0 +1,105 @@
+.content {
+    margin-top: 20px;
+    display: grid;
+}
+
+h1.titleLightningSupports {
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.listOfLightningSupports {
+    list-style-type: none;
+    margin-top: 6px;
+}
+
+.listOfLightningSupports li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.listOfLightningSupports li p {
+    font-family: Montserrat-Light, sans-serif;
+    display: initial;
+}
+
+.listOfLightningSupports li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+
+/*Media*/
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin-top: 30px;
+    }
+
+    h1.titleLightningSupports {
+        font-size: 36px;
+        line-height: 25px;
+    }
+
+    .listOfLightningSupports {
+        margin-top: 10px;
+    }
+
+    .listOfLightningSupports li {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .listOfLightningSupports li:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .content {
+        margin-top: 40px;
+    }
+
+    h1.titleLightningSupports {
+        font-size: 48px;
+        line-height: 35px;
+    }
+
+    .listOfLightningSupports {
+        margin-top: 30px;
+    }
+
+    .listOfLightningSupports li {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .listOfLightningSupports li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .content {
+        margin-top: 60px;
+    }
+
+    .listOfLightningSupports {
+        margin-top: 30px;
+    }
+
+    .listOfLightningSupports li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1920px) {
+}

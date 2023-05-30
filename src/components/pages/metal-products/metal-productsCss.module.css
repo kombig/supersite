@@ -1,0 +1,58 @@
+.bothBCGWithOut {
+    background: #E1E8EC;
+    color: #2C2C38;
+}
+
+.bothBCGFirst {
+    background: #E1E8EC url("../../../assets/images/metal-products/bg.svg") no-repeat center center;
+    background-size: contain;
+    background-position-y: -34%;
+    background-position-x: 200px;
+}
+
+.bothBCGSecond {
+    background: #E1E8EC url("../../../assets/images/metal-products/bg2.svg") no-repeat center center;
+    background-size: contain;
+    background-position-y: 1%;
+    background-position-x: -170px;
+}
+
+@media (min-width: 475px) {
+    .bothBCGFirst {
+        background-position-x: calc(100% + 50px);
+    }
+}
+
+@media (min-width: 620px) {
+    .bothBCGSecond {
+        background-position-x: -100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .bothBCGFirst {
+        background-position-x: calc(100% + 430px);
+        background-position-y: -310px;
+    }
+
+    .bothBCGSecond {
+        background-position-x: -160px;
+    }
+}
+
+@media (min-width: 1105px) {
+    .bothBCGFirst {
+        background-position-x: calc(100% + 110px);
+        background-position-y: -160px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .bothBCGFirst {
+        background-position-x: calc(100% + 30px);
+        background-position-y: -140px;
+    }
+}
+
+@media (min-width: 1600px) {
+}

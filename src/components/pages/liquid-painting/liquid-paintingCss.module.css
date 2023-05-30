@@ -1,0 +1,56 @@
+.bothBCG {
+    background: #E1E8EC url("../../../assets/images/sand-blasting/bg.svg") no-repeat center center;
+    color: #2C2C38;
+    background-size: cover;
+    background-position-y: 16%;
+    background-position-x: -210px;
+}
+
+@media (min-width: 420px) {
+    .bothBCG {
+        background-position-y: -60px;
+        background-position-x: -170px;
+    }
+}
+
+@media (min-width: 620px) {
+    .bothBCG {
+        background-position-y: -110px;
+        background-position-x: -180px;
+    }
+}
+
+@media (min-width: 768px) {
+    .bothBCG {
+        background-position-y: -110px;
+        background-position-x: 22%;
+    }
+}
+
+@media (min-width: 1040px) {
+    .bothBCG {
+        background-position-y: -170px;
+        background-position-x: 30%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .bothBCG {
+        background-position-y: 60px;
+        background-position-x: 40%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .bothBCG {
+        background-position-y: -10px;
+        background-position-x: 100%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .bothBCG {
+        background-position-y: -60px;
+        background-position-x: 0;
+    }
+}

@@ -1,0 +1,62 @@
+.content {
+    margin-top: 10px;
+}
+
+h1.titleAdvantages {
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: 28px;
+    line-height: 31px;
+    text-align: center;
+}
+
+.advantages {
+    margin-top: 30px;
+}
+
+/*Media*/
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin-top: 30px;
+    }
+
+    h1.titleAdvantages {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .advantages {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .content {
+        margin-top: 50px;
+    }
+
+    h1.titleAdvantages {
+        font-size: 48px;
+        line-height: 53px;
+    }
+
+    .advantages {
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .content {
+        margin-top: 60px;
+    }
+
+    .advantages {
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 1920px) {
+}

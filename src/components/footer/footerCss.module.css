@@ -1,0 +1,351 @@
+.footer {
+    color: #ffffff;
+}
+
+.footerTop {
+    background-color: #2C2C38;
+}
+
+.footerTop .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "info"
+    "social"
+    "linksFirst"
+    "linksSecond";
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footerTop .info {
+    grid-area: info;
+}
+
+.footerTop .info img {
+    width: 72px !important;
+    height: 42px !important;
+}
+
+.footerTop .info a > div {
+    height: 42px;
+}
+
+.footerTop .info p,
+.footerTop .info a,
+.footerTop .info div:not(:first-child) {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: Montserrat-Light, sans-serif;
+}
+
+.footerTop .info div:first-child {
+    margin-bottom: 12px;
+}
+
+.footerTop .info div:nth-child(2) {
+    margin-bottom: 10px;
+}
+
+.footerTop .info {
+    margin-bottom: 28px;
+}
+
+.footerTop .social {
+    grid-area: social;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 27px;
+    margin-bottom: 28px;
+}
+
+.footerTop .social img {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.footerTop .linksFirst {
+    grid-area: linksFirst;
+}
+
+.footerTop .linksSecond {
+    grid-area: linksSecond;
+}
+
+.footerTop .linksFirst li,
+.footerTop .linksSecond li {
+    margin-bottom: 6px;
+}
+
+.footerTop .linksFirst li a p,
+.footerTop .linksSecond li a p {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.footerTop .linksFirst li a p,
+.footerTop .linksSecond li a p,
+.footerTop .linksFirst li a,
+.footerTop .linksSecond li a {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: Montserrat-Light, sans-serif;
+}
+
+.footerTop ul {
+    list-style-type: none;
+}
+
+.footerBottom {
+    background-color: #25252C;
+}
+
+.footerBottom .content {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr max-content 1fr;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.footerBottom .toTop {
+    line-height: 0;
+    margin-left: 7px;
+    width: fit-content;
+    position: relative;
+}
+
+.footerBottom .toTop:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 0;
+    left: 50%;
+    bottom: 0;
+    padding: 20px 25px;
+}
+
+.footerBottom .toTop img {
+    width: 20px !important;
+    height: 20px !important;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.footerBottom .privacy {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.footerBottom .privacy p {
+    font-family: Montserrat-Light, sans-serif;
+}
+
+.footerBottom .toTop img,
+.footerTop .social img {
+    cursor: pointer;
+    transition: opacity ease-in 150ms;
+}
+
+.linksFirst ul li a p,
+.linksSecond ul li a p {
+    position: relative;
+}
+
+.linksFirst ul li a p:after,
+.linksSecond ul li a p:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 1px;
+    bottom: 0;
+    width: 0;
+    border-bottom: 1px solid #FFFFFF;
+    transition: width ease-in-out 200ms;
+}
+
+/*Animation*/
+.footerBottom .toTop img:hover,
+.footerTop .social img:hover {
+    opacity: .6;
+}
+
+.linksFirst ul li a p:hover:after,
+.linksSecond ul li a p:hover:after {
+    width: calc(100% - 2px);
+}
+
+/*Media*/
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+    .footerTop .linksFirst li a p,
+    .footerTop .linksSecond li a p {
+        margin: initial;
+    }
+
+    .footerBottom .toTop {
+        margin-left: 30px;
+    }
+
+    .footerBottom .toTop img {
+        width: 31px !important;
+        height: 31px !important;
+    }
+
+    .footerBottom .privacy {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .footerTop .content {
+        grid-template-columns: max-content 1fr max-content;
+        grid-template-areas:
+    "info zero linksFirst"
+    "info zero linksSecond"
+    "social zero linksSecond"
+    "social zero linksSecond";
+        margin-top: 40px;
+        margin-bottom: 40px;
+        justify-items: inherit;
+        text-align: inherit;
+        align-items: inherit;
+    }
+
+    .footerTop .info p,
+    .footerTop .info a,
+    .footerTop .info div:not(:first-child) {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .footerTop .info img {
+        width: 155px !important;
+        height: 90px !important;
+    }
+
+    .footerTop .info a > div {
+        height: 90px;
+    }
+
+    .footerTop .info div:first-child {
+        margin-bottom: 20px;
+    }
+
+    .footerTop .info div:nth-child(2) {
+        margin-bottom: 18px;
+    }
+
+    .footerTop .info {
+        margin-bottom: 24px;
+    }
+
+    .footerTop .social img {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    .footerTop .social {
+        column-gap: 37px;
+        margin-bottom: 0;
+    }
+
+    .footerTop .linksFirst li,
+    .footerTop .linksSecond li {
+        margin-bottom: 18px;
+    }
+
+    .footerTop .linksFirst li a p,
+    .footerTop .linksSecond li a p,
+    .footerTop .linksFirst li a,
+    .footerTop .linksSecond li a {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .footerTop .linksFirst ul,
+    .footerTop .linksSecond ul {
+        position: relative;
+    }
+
+    .footerTop .linksFirst ul:before,
+    .footerTop .linksSecond ul:before {
+        content: "";
+        position: absolute;
+        left: -15px;
+        border-left: 1px solid #ffffff;
+    }
+
+    .footerTop .linksFirst ul:before {
+        top: 6px;
+        bottom: 0;
+    }
+
+    .footerTop .linksSecond ul:before {
+        top: -20px;
+        bottom: 6px;
+    }
+
+    .linksFirst ul li a p:after,
+    .linksSecond ul li a p:after {
+        left: 3px;
+    }
+
+    .linksFirst ul li a p:hover:after,
+    .linksSecond ul li a p:hover:after {
+        width: calc(100% - 5px);
+    }
+}
+
+@media (min-width: 1280px) {
+    .footerBottom .toTop {
+        margin-left: 60px;
+    }
+
+    .footerTop .content {
+        grid-template-columns: max-content 1fr 1.4fr 1.1fr;
+        grid-template-areas:
+    "info social linksFirst linksSecond";
+    }
+
+    .footerTop .linksFirst,
+    .footerTop .linksSecond {
+        justify-self: flex-end;
+    }
+
+    .footerTop .social {
+        justify-self: center;
+        margin-top: 30px;
+    }
+
+    .footerTop .linksFirst li,
+    .footerTop .linksSecond li {
+        margin-bottom: 28px;
+    }
+
+    .footerTop .info {
+        margin-bottom: 0;
+    }
+
+    .footerTop .linksFirst ul:before {
+        top: 6px;
+        bottom: 6px;
+    }
+
+    .footerTop .linksSecond ul:before {
+        top: 6px;
+        bottom: 6px;
+    }
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1920px) {
+}

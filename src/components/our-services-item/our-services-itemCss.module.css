@@ -1,0 +1,228 @@
+.detail {
+    position: relative;
+    padding: 6px 18px;
+    z-index: 1;
+    font-size: 14px;
+    line-height: 17px;
+    display: inline-block;
+    color: #ffffff;
+    margin-top: 9px;
+    margin-bottom: 19px;
+    cursor: pointer;
+}
+
+p.detail {
+    font-family: Montserrat-Regular, sans-serif;
+}
+
+.detail:before {
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    border-radius: 10px;
+    background-color: #2C2C38;
+    opacity: .8;
+}
+
+.textWrapper {
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+.service {
+    display: grid;
+    grid-template-areas: "img" "descriptionWrapper";
+    grid-template-columns: 1fr;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.service:not(:first-child) {
+    margin-top: 10px;
+}
+
+.service .img {
+    line-height: 0;
+    grid-area: img;
+    overflow: hidden;
+}
+
+.service .img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.service .serviceTitle {
+    font-size: 24px;
+    line-height: 29px;
+    color: #2C2C38;
+    margin-top: 4px;
+}
+
+.service h2.serviceTitle {
+    font-family: Montserrat-Regular, sans-serif;
+}
+
+.service .serviceDescription {
+    font-size: 16px;
+    line-height: 20px;
+    color: #2C2C38;
+    margin-top: 2px;
+}
+
+.service p.serviceDescription {
+    font-family: Montserrat-Light, sans-serif;
+}
+
+.serviceDescriptionWrapper {
+    background-color: #ffffff;
+    grid-area: descriptionWrapper;
+}
+
+.detail:before {
+    cursor: pointer;
+    transition: opacity ease-in 150ms;
+}
+
+.service .img img {
+    transition: transform ease-in 150ms;
+}
+
+/*Animation*/
+.detail:hover:before {
+    opacity: 1;
+}
+
+.service .img img:hover {
+    transform: scale(1.03);
+}
+
+/*Media*/
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+    .detail {
+        padding: 11px 27px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 10px;
+        margin-bottom: 24px;
+    }
+
+    .service {
+        border-radius: 30px;
+    }
+
+    .service .serviceDescription {
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 2px;
+    }
+
+    .service:not(:first-child) {
+        margin-top: 20px;
+    }
+
+    .textWrapper {
+        margin-left: 19px;
+        margin-right: 19px;
+    }
+
+    .service .serviceTitle {
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .detail {
+        padding: 13px 48px;
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 19px;
+        margin-bottom: 44px;
+    }
+
+    .textWrapper {
+        margin-left: 31px;
+        margin-right: 20px;
+    }
+
+    .service {
+        border-radius: 50px;
+        grid-template-areas: "img descriptionWrapper";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service .serviceTitle {
+        font-size: 36px;
+        line-height: 44px;
+        margin-top: 9px;
+    }
+
+    .serviceDescriptionWrapper {
+        height: 500px;
+    }
+
+    .service .serviceDescription {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 8px;
+    }
+
+    .service .img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .serviceIMGRight {
+        grid-template-areas: "descriptionWrapper img";
+    }
+
+    .service .img {
+        height: 500px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .service .serviceTitle {
+        font-size: 40px;
+        line-height: 49px;
+        margin-top: 30px;
+    }
+
+    .detail {
+        margin-bottom: 0;
+    }
+
+    .service .serviceDescription {
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 4px;
+    }
+
+    .service {
+        grid-template-columns: 1fr 585px;
+    }
+
+    .serviceIMGRight {
+        grid-template-columns: 585px 1fr;
+    }
+
+    .service .img {
+        height: 550px;
+    }
+
+    .serviceDescriptionWrapper {
+        height: 550px;
+    }
+}
+
+@media (min-width: 1920px) {
+}

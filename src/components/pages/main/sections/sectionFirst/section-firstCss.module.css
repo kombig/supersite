@@ -1,0 +1,121 @@
+.content {
+    margin-top: 20px;
+}
+
+h1.titleOurServices {
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: 24px;
+    line-height: 18px;
+}
+
+.servicesWrapper {
+    margin-top: 15px;
+}
+
+.servicesWrapper > div:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/*Media*/
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin-top: 30px;
+    }
+
+    h1.titleOurServices {
+        font-size: 36px;
+        line-height: 25px;
+    }
+
+    .servicesWrapper {
+        margin-top: 20px;
+    }
+
+    .servicesWrapper > div:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .content {
+        margin-top: 40px;
+    }
+
+    h1.titleOurServices {
+        font-size: 48px;
+        line-height: 35px;
+    }
+
+    .servicesWrapper {
+        margin-top: 40px;
+    }
+
+    .productionOfMetalStructures > div {
+        grid-template-columns: minmax(428px, auto) auto;
+        margin-right: 60px;
+    }
+
+    .laserCutting > div,
+    .powderCoating > div {
+        grid-template-columns: auto minmax(428px, auto);
+    }
+
+    .sandblasting > div {
+        grid-template-columns: auto minmax(388px, auto);
+        margin-left: 103px;
+    }
+
+    .pipeCutting > div {
+        grid-template-columns: minmax(442px, auto) auto;
+    }
+
+    .lightingSupports > div {
+        grid-template-columns: auto  minmax(353px, auto);
+        margin-right: 60px;
+    }
+
+    .liquidPainting > div {
+        grid-template-columns: minmax(242px, auto) auto;
+    }
+}
+
+@media (min-width: 1600px) {
+    .content {
+        margin-top: 60px;
+    }
+
+    .productionOfMetalStructures > div {
+        grid-template-columns: auto 585px;
+        margin-right: 114px;
+    }
+
+    .laserCutting > div,
+    .powderCoating > div {
+        grid-template-columns: 585px auto;
+    }
+
+    .sandblasting > div {
+        grid-template-columns: 585px auto;
+        margin-left: 140px;
+    }
+
+    .pipeCutting > div {
+        grid-template-columns: auto 700px;
+    }
+
+    .lightingSupports > div {
+        grid-template-columns: 585px auto;
+        margin-right: 114px;
+    }
+
+    .liquidPainting > div {
+        grid-template-columns: 673px auto;
+    }
+}
+
+@media (min-width: 1920px) {
+}

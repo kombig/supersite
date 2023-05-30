@@ -1,0 +1,109 @@
+.tabsColor .ant-tabs-nav-list {
+    flex-wrap: wrap;
+}
+
+.tabsColor .ant-tabs-nav:before {
+    border: 0;
+}
+
+.tabsColor .ant-tabs-ink-bar {
+    display: none;
+}
+
+.tabsColor .ant-tabs-nav-wrap {
+    justify-content: flex-start;
+}
+
+.tabsColor .ant-tabs-tab:not(:last-child) {
+    margin-right: 20px;
+}
+
+.tabsColor .ant-tabs-tab {
+    margin: 0 0 10px 0;
+    padding: 0 !important;
+}
+
+.tabsColor .ant-tabs-nav {
+    margin: 0 0 4px 0;
+}
+
+.tabsColor .ant-tabs-tab-btn {
+    border-radius: 10px;
+    border: 1px solid #2c2c38;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 4px 10px;
+    font-family: Montserrat-Light, sans-serif;
+    color: #323942;
+}
+
+.tabsColor .ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #FFFFFF;
+    background-color: #323942;
+}
+
+.tabsColor .ant-tabs-tabpane {
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(90px, 1fr) );
+    grid-gap: 15px;
+    justify-items: center;
+}
+
+/*Media*/
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+    .tabsColor .ant-tabs-tab-btn {
+        border-radius: 16px;
+        font-size: 24px;
+        line-height: 29px;
+        padding: 4px 20px;
+    }
+
+    .tabsColor .ant-tabs-tab {
+        margin: 0 0 20px 0;
+    }
+
+    .tabsColor .ant-tabs-tabpane {
+        grid-template-columns: repeat( auto-fill, minmax(120px, 1fr) );
+        grid-row-gap: 30px;
+        grid-column-gap: 62px;
+    }
+
+    .tabsColor .ant-tabs-nav {
+        margin: 0 0 12px 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .tabsColor .ant-tabs-tab-btn {
+        font-size: 32px;
+        line-height: 39px;
+        padding: 4px 20px;
+    }
+
+    .tabsColor .ant-tabs-tab {
+        margin: 0 0 20px 0;
+    }
+
+    .tabsColor .ant-tabs-tabpane {
+        grid-template-columns: repeat( auto-fill, minmax(180px, 1fr) );
+        grid-gap: 42px;
+    }
+
+    .tabsColor .ant-tabs-nav {
+        margin: 0 0 22px 0;
+    }
+
+    .tabsColor .ant-tabs-tab:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1920px) {
+}

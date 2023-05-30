@@ -1,0 +1,55 @@
+.content {
+    margin-top: 24px;
+}
+
+h1.titleStagesOfPainting {
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: 24px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.content > div:nth-child(2) {
+    margin-top: 28px;
+}
+
+/*Media*/
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin-top: 44px;
+    }
+
+    h1.titleStagesOfPainting {
+        font-size: 36px;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .stageOfPaintingItemWidth {
+        width: 30vw;
+    }
+
+    .content {
+        margin-top: 92px;
+    }
+
+    h1.titleStagesOfPainting {
+        font-size: 48px;
+        line-height: 35px;
+    }
+
+    .content > div:nth-child(2) {
+        margin-top: -4px;
+    }
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1920px) {
+}

@@ -1,0 +1,58 @@
+.stagesOfPainting {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 11vw;
+    grid-row-gap: 5vw;
+    justify-items: center;
+}
+
+/*Media*/
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+    .stagesOfPainting {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 8vw;
+        grid-row-gap: 2vw;
+    }
+}
+
+@media (min-width: 1280px) {
+    .stagesOfPainting {
+        grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+        grid-column-gap: 6vw;
+        position: relative;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .stagesOfPainting:before, .stagesOfPainting:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        width: 90%;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 auto;
+    }
+
+    .stagesOfPainting:before {
+        background-image: url("../../assets/images/powder-painting/sectionFour/up.png");
+        top: 44px;
+    }
+
+    .stagesOfPainting:after {
+        background-image: url("../../assets/images/powder-painting/sectionFour/down.png");
+        bottom: 30px;
+    }
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1920px) {
+}

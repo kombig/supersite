@@ -1,0 +1,146 @@
+.header {
+    margin-top: 40px;
+    background: #E1E8EC url("../../../../../assets/images/contacts/header/bg.svg") no-repeat center center;
+    background-size: initial;
+    background-position-y: -350px;
+    background-position-x: -320px;
+}
+
+.content {
+    color: #2C2C38;
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 235px;
+    justify-content: center;
+    margin-bottom: 44px;
+}
+
+.content ul {
+    margin-top: 14px;
+}
+
+h1.titleContacts {
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.img {
+    line-height: 0;
+    display: none;
+    overflow: hidden;
+}
+
+.img img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.img img {
+    transition: transform ease-in 150ms;
+}
+
+/*Animation*/
+.img img:hover {
+    transform: scale(1.03);
+}
+
+/*Media*/
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 600px) {
+    .header {
+        background-position-y: -330px;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        margin-top: 60px;
+        background-position-y: -220px;
+    }
+
+    .content {
+        margin-top: 32px;
+        grid-template-columns: 353px;
+        margin-bottom: 34px;
+    }
+
+    h1.titleContacts {
+        font-size: 36px;
+        line-height: 25px;
+    }
+
+    .content ul {
+        margin-top: 28px;
+    }
+}
+
+@media (min-width: 950px) {
+    .header {
+        background-position-x: -230px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .content {
+        margin-top: 42px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1.titleContacts {
+        font-size: 48px;
+        line-height: 35px;
+    }
+
+    .content ul {
+        margin-top: 22px;
+    }
+
+    .text {
+        text-align: initial;
+        display: block;
+    }
+
+    .img {
+        display: initial;
+        align-self: center;
+    }
+}
+
+@media (min-width: 1600px) {
+    .content {
+        margin-top: 62px;
+        margin-bottom: 60px;
+    }
+
+    .content ul {
+        margin-top: 26px;
+    }
+
+    .img {
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 1601px) {
+    .content {
+        grid-template-columns: 1.4fr 1fr;
+    }
+}
+
+@media (min-width: 1780px) {
+    .content {
+        grid-template-columns: 1.4fr 1fr;
+    }
+
+    .img {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1920px) {
+}

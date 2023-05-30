@@ -1,0 +1,96 @@
+@import url("../assets/fonts/Montserrat/montserrat-font.css");
+@import url("./swiper-examples-workCss.css");
+@import url("./yandex-map.css");
+@import url("./tabs-of-colorCss.css");
+
+body {
+    width: initial !important;
+    font-feature-settings: normal;
+    font-variant: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:active,
+a:hover {
+    color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #2c2c38;
+    font-weight: initial;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.NImg,
+.NImg > div {
+    width: 100%;
+    height: 100%;
+}
+
+.NImg > span {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #4e4e59;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2C2C38;
+}
+
+.ant-image-preview-operations .ant-image-preview-operations-operation:not(:first-child) {
+    display: none;
+}
+
+/*Media*/
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1920px) {
+}

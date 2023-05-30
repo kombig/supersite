@@ -1,0 +1,44 @@
+h1.title {
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    margin-top: 20px;
+}
+
+/*Media*/
+
+@media (min-width: 355px) {
+    h1.title {
+        line-height: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin-top: 30px;
+    }
+
+    h1.title {
+        font-size: 36px;
+        line-height: 25px;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .content {
+        margin-top: 40px;
+    }
+
+    h1.title {
+        font-size: 48px;
+        line-height: 35px;
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .content {
+        margin-top: 60px;
+    }
+}

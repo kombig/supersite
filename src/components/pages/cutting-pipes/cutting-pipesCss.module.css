@@ -1,0 +1,45 @@
+.bothBCG {
+    background: #E1E8EC url("../../../assets/images/cutting-pipes/bg320.svg") no-repeat center center;
+    color: #2C2C38;
+    background-size: cover;
+    background-position-y: -20px;
+}
+
+@media (min-width: 500px) {
+    .bothBCG {
+        background: #E1E8EC url("../../../assets/images/cutting-pipes/bg320.svg") no-repeat center center;
+        background-size: cover;
+        background-position-y: 8%;
+    }
+}
+
+@media (min-width: 650px) {
+    .bothBCG {
+        background: #E1E8EC url("../../../assets/images/cutting-pipes/bg650.svg") no-repeat center center;
+        background-size: contain;
+        background-position-y: -20%;
+    }
+}
+
+@media (min-width: 720px) {
+    .bothBCG {
+        background: #E1E8EC url("../../../assets/images/cutting-pipes/bg650.svg") no-repeat center center;
+        background-size: contain;
+        background-position-y: -20px;
+        background-position-x: -10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .bothBCG {
+        background: #E1E8EC url("../../../assets/images/cutting-pipes/bg768.svg") no-repeat center center;
+        background-size: cover;
+        background-position-y: 2%;
+    }
+}
+
+@media (min-width: 1700px) {
+    .bothBCG {
+        background-position-y: 12%;
+    }
+}

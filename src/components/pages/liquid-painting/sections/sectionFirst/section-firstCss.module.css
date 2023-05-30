@@ -1,0 +1,176 @@
+.content {
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas:
+            "txt"
+            "img";
+}
+
+h1.titleLiquidPainting {
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.listOfLiquidPainting {
+    list-style-type: none;
+    margin-top: 6px;
+}
+
+.listOfLiquidPainting li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.listOfLiquidPainting li p {
+    font-family: Montserrat-Light, sans-serif;
+    display: initial;
+}
+
+.listOfLiquidPainting li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.text {
+    grid-area: txt;
+}
+
+.img {
+    grid-area: img;
+    line-height: 0;
+    margin-top: 16px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.img span {
+    border-radius: 30px;
+}
+
+.img img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.img img {
+    transition: transform ease-in 150ms;
+}
+
+/*Animation*/
+.img img:hover {
+    transform: scale(1.03);
+}
+
+/*Media*/
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 420px) {
+    .img {
+        text-align: center;
+    }
+
+    .img img {
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin-top: 30px;
+    }
+
+    h1.titleLiquidPainting {
+        font-size: 36px;
+        line-height: 25px;
+    }
+
+    .listOfLiquidPainting {
+        margin-top: 10px;
+    }
+
+    .listOfLiquidPainting li {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .listOfLiquidPainting li:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .content {
+        margin-top: 40px;
+        grid-template-areas:
+            "txt img";
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    h1.titleLiquidPainting {
+        font-size: 48px;
+        line-height: 35px;
+    }
+
+    .listOfLiquidPainting {
+        margin-top: 30px;
+    }
+
+    .listOfLiquidPainting li {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .listOfLiquidPainting li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .img {
+        text-align: initial;
+        align-self: center;
+        margin-top: 0;
+        border-radius: 50px;
+    }
+
+    .img span {
+        border-radius: 50px;
+        float: right;
+    }
+
+    .img img {
+        width: 100%;
+        border-radius: 50px;
+    }
+
+    .text {
+        margin-right: 60px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .content {
+        margin-top: 60px;
+        grid-template-areas: "txt img";
+        grid-template-columns: 1.2fr 1fr;
+    }
+
+    .listOfLiquidPainting {
+        margin-top: 30px;
+    }
+
+    .listOfLiquidPainting li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1920px) {
+}

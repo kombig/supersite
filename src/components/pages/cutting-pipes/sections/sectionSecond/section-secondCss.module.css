@@ -1,0 +1,189 @@
+.content {
+    margin-top: 32px;
+    display: grid;
+    justify-items: center;
+    margin-bottom: 20px;
+    grid-template-areas:
+            "info"
+            "img"
+            "video";
+}
+
+h2.titleLight {
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: 24px;
+    line-height: 18px;
+}
+
+h3.titleMortgagesLight {
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 12px;
+}
+
+.info {
+    grid-area: info;
+}
+
+.info p {
+    text-align: justify;
+}
+
+.sizeImg {
+    grid-area: img;
+}
+
+.video {
+    grid-area: video;
+}
+
+.info ul {
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.info ul li {
+    position: relative;
+}
+
+.sizeImg {
+    line-height: 0;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.sizeImg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.sizeImg > span {
+    width: 80% !important;
+}
+
+.info ul li p {
+    font-family: Montserrat-Light, sans-serif;
+}
+
+.info ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.video {
+    margin-top: 28px;
+    border-radius: 20px;
+    overflow: hidden;
+    line-height: 0;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    padding-bottom: 13px;
+}
+
+.video video {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/*Media*/
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin-top: 44px;
+    }
+
+    .sizeImg > span {
+        width: 100% !important;
+    }
+
+    .sizeImg {
+        margin-top: 28px;
+    }
+
+    h2.titleLight {
+        font-size: 36px;
+        line-height: 25px;
+    }
+
+    h3.titleMortgagesLight {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .info ul {
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 22px;
+    }
+
+    .info ul li:not(:last-child) {
+        margin-bottom: 22px;
+    }
+
+    .video {
+        margin-top: 60px;
+        padding-bottom: 17px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .content {
+        margin-top: 44px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "info img"
+            "video video";
+    }
+
+    h3.titleMortgagesLight {
+        font-size: 28px;
+        line-height: 34px;
+        margin-top: 36px;
+    }
+
+    .content {
+        margin-top: 64px;
+        margin-bottom: 40px;
+    }
+
+    h2.titleLight {
+        font-size: 48px;
+        line-height: 35px;
+    }
+
+    .info ul {
+        font-size: 24px;
+        line-height: 29px;
+        margin-top: 24px;
+    }
+
+    .info ul li:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .video video {
+        border-radius: 50px;
+    }
+
+    .video {
+        border-radius: 50px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .content {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 1920px) {
+}

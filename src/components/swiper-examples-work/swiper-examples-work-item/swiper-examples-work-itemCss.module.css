@@ -1,0 +1,33 @@
+.item > div {
+    display: block !important;
+}
+
+.item {
+    margin-right: 20px;
+}
+
+/*Media*/
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+    .item {
+        margin-right: 100px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .item {
+        margin-right: 200px;
+    }
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (min-width: 1920px) {
+    .item {
+        margin-right: 400px;
+    }
+}

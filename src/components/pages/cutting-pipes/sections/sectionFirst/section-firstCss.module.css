@@ -1,0 +1,266 @@
+.content {
+    margin-top: 20px;
+}
+
+h1.titlePipeCutting {
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: 24px;
+    line-height: 18px;
+}
+
+.sizeWrapper {
+    display: grid;
+    grid-template-areas:
+            "img"
+            "maxSize"
+            "durab";
+}
+
+.sizeImg {
+    line-height: 0;
+    margin-top: 8px;
+    grid-area: img;
+}
+
+.sizeImg img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.sizeImg > span {
+    width: 100% !important;
+}
+
+.size {
+    margin-top: 16px;
+    grid-area: maxSize;
+    z-index: 1;
+}
+
+.size > h2 {
+    font-family: Montserrat-Regular, sans-serif;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.size ul {
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+.size ul li {
+    position: relative;
+}
+
+.size ul li p {
+    display: initial;
+    font-family: Montserrat-Light, sans-serif;
+}
+
+.size ul li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.size ul li:before {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+    margin-top: 2px;
+    transform: scale(.7);
+}
+
+.size ul li:nth-child(1):before {
+    content: url("../../../../../assets/images/general/height.svg");
+}
+
+.size ul li:nth-child(2):before {
+    content: url("../../../../../assets/images/general/long.svg");
+}
+
+.size ul li:nth-child(3):before {
+    content: url("../../../../../assets/images/general/width.svg");
+}
+
+.size ul li:nth-child(4):before {
+    content: url("../../../../../assets/images/general/KG.svg");
+}
+
+.durability {
+    margin-top: 10px;
+    grid-area: durab;
+}
+
+.durability h2, .durability p {
+    font-family: Montserrat-Medium, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.durability p {
+    font-family: Montserrat-Light, sans-serif;
+    margin-top: 4px;
+}
+
+/*Media*/
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 500px) {
+    .sizeImg > span {
+        width: 70% !important;
+    }
+
+    .sizeImg {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin-top: 30px;
+    }
+
+    h1.titlePipeCutting {
+        font-size: 36px;
+        line-height: 25px;
+    }
+
+    .size {
+        margin-top: -10px;
+    }
+
+    .sizeImg {
+        margin-top: 34px;
+        text-align: center;
+    }
+
+    .sizeImg > span {
+        width: 100% !important;
+    }
+
+    .size > h2 {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .size ul {
+        margin-top: 12px;
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    .size ul li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .size ul li:before {
+        transform: scale(1.1);
+        margin-right: 16px;
+    }
+
+    .size ul li:nth-child(3), .size ul li:nth-child(4) {
+        display: flex;
+        align-items: center;
+    }
+
+    .durability {
+        margin-top: 18px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .sizeImg > span {
+        width: 70% !important;
+    }
+}
+
+@media (min-width: 1280px) {
+    .sizeWrapper {
+        display: grid;
+        grid-template-areas:
+            "img maxSize"
+            "zero durab";
+        grid-template-columns: 1.26fr 1fr;
+    }
+
+    .sizeImg > span {
+        width: 100% !important;
+    }
+
+    .content {
+        margin-top: 40px;
+    }
+
+    h1.titlePipeCutting {
+        font-size: 48px;
+        line-height: 35px;
+    }
+
+    .size > h2 {
+        font-size: 42px;
+        line-height: 51px;
+    }
+
+    .size ul {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .size {
+        margin-top: 27px;
+        margin-left: 46px;
+    }
+
+    .size ul li:before {
+        transform: scale(1.2);
+    }
+
+    .durability h2, .durability p {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .durability {
+        margin-top: 18px;
+        margin-left: -170px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .content {
+        margin-top: 60px;
+    }
+
+    .durability {
+        margin-left: -30%;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1807px) {
+    .sizeImg > span {
+        width: 70% !important;
+    }
+}
+
+@media (min-width: 1920px) {
+    .durability {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 2007px) {
+    .durability {
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 2187px) {
+    .durability {
+        margin-top: 100px;
+    }
+}
